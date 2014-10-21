@@ -344,7 +344,7 @@ static void PowerSourceChanged(void * context)
             else
             {
                 // Not charging and on a endless powersource
-                [self setStatusBarImage:[self getBatteryIconNamed:@"BatteryCharged"] title:nil];
+                [self setStatusBarImage:[self getBatteryIconNamed:@"BatteryChargedAndPlugged"] title:nil];
                 
                 NSNumber *currentBatteryCapacity = CFDictionaryGetValue(description, CFSTR(kIOPSCurrentCapacityKey));
                 NSNumber *maxBatteryCapacity = CFDictionaryGetValue(description, CFSTR(kIOPSMaxCapacityKey));
@@ -632,7 +632,7 @@ static void PowerSourceChanged(void * context)
     // special treatment for the BatteryCharging, BatteryCharged, and BatteryEmpty images
     // they need to be shifted down by 2points to be in the same position as Apple's
     NSImage *imgCharging = [ImageFilter offset:[self loadBatteryIconNamed:@"BatteryCharging"] top:EXTRA_TOP_OFFSET];
-    NSImage *imgCharged = [ImageFilter offset:[self loadBatteryIconNamed:@"BatteryCharged"] top:EXTRA_TOP_OFFSET];
+    NSImage *imgCharged = [ImageFilter offset:[self loadBatteryIconNamed:@"BatteryChargedAndPlugged"] top:EXTRA_TOP_OFFSET];
     NSImage *imgEmpty = [ImageFilter offset:[self loadBatteryIconNamed:@"BatteryEmpty"] top:EXTRA_TOP_OFFSET];
     
     // Make the image black and white
@@ -641,7 +641,7 @@ static void PowerSourceChanged(void * context)
     // finally construct the dictionary from which we will retrieve the images at runtime
     batteryIcons = [NSDictionary dictionaryWithObjectsAndKeys:
                     imgCharging,                                       @"BatteryCharging",
-                    imgCharged,                                        @"BatteryCharged",
+                    imgCharged,                                        @"BatteryChargedAndPlugged",
                     imgEmpty,                                          @"BatteryEmpty",
                     [self loadBatteryIconNamed:@"BatteryLevelCapB-L"], @"BatteryLevelCapB-L",
                     [self loadBatteryIconNamed:@"BatteryLevelCapB-M"], @"BatteryLevelCapB-M",

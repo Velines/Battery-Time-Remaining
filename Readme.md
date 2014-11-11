@@ -46,6 +46,27 @@ App icon provided by happytel.com free calling for all.
 Change log
 ----------
 
+2014-10-28 - **v3.0.1** - [diff](https://github.com/codler/Battery-Time-Remaining/compare/v3.0...v3.0.1)
+
+* Fix dark mode ([codler](https://github.com/codler)
+
+2014-10-28 - **v1.7.1** - [diff](https://github.com/codler/Battery-Time-Remaining/compare/v1.7...v1.7.1)
+
+* Fix dark mode ([codler](https://github.com/codler)
+
+2014-10-18 - **v1.7** - [diff](https://github.com/codler/Battery-Time-Remaining/compare/v1.6.5...v1.7)
+
+* Added support for OS X 10.10 Yosemite ([codler](https://github.com/codler) [#89](https://github.com/codler/Battery-Time-Remaining/issues/89))
+
+2014-10-17 - **v3.0** - [diff](https://github.com/codler/Battery-Time-Remaining/compare/v2.1...v3.0)
+
+* Added support for OS X 10.10 Yosemite ([codler](https://github.com/codler) [#89](https://github.com/codler/Battery-Time-Remaining/issues/89))
+
+2014-01-02 - **v2.1** - [diff](https://github.com/codler/Battery-Time-Remaining/compare/v2.0.2...v2.1)
+
+* Added notifications while charging ([codler](https://github.com/codler) [#79](https://github.com/codler/Battery-Time-Remaining/issues/79))
+* Updated German language ([Velines](https://github.com/Velines) [#80](https://github.com/codler/Battery-Time-Remaining/pull/80))
+
 2013-10-23 - **v2.0.2** - [diff](https://github.com/codler/Battery-Time-Remaining/compare/v2.0.1...v2.0.2)
 
 * Updated French language ([Vinky41](https://github.com/Vinky41) [#69](https://github.com/codler/Battery-Time-Remaining/pull/69))
